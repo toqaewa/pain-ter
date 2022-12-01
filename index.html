@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ca98cc84c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PainTer</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="tools-board">
+            <div class="row shapes">
+                <label class="title">Shapes</label>
+                <ul class="options">
+                    <li class="option tool" id="square">
+                        <i class="fa-regular fa-square"></i>
+                    </li>
+                    <li class="option tool" id="square-filled">
+                        <i class="fa-solid fa-square"></i>
+                    </li>
+                    <li class="option tool" id="circle">
+                        <i class="fa-regular fa-circle"></i>                        
+                    </li>
+                    <li class="option tool" id="circle-filled">
+                        <i class="fa-solid fa-circle"></i>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <label for="fill-color">Fill-color</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row tools">
+                <label class="title">Tools</label>
+                <ul class="options">
+                    <li class="option tool active" id="brush">
+                        <i class="fa-solid fa-paintbrush"></i>                        
+                        <span>Brush</span>
+                    </li>
+                    <li class="option tool" id="line">
+                        <i class="fa-solid fa-minus"></i>                        
+                        <span>Line</span>
+                    </li>
+                    <li class="option tool" id="eraser">
+                        <i class="fa-solid fa-eraser"></i>                        
+                        <span>Eraser</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <label class="title">Colors</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#ff00a2">
+                    </li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Clear canvas</button>
+                <button class="save-img">Save</button>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+</body>
+</html>
